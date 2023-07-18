@@ -1,6 +1,6 @@
-import { applyMiddleware, createStore } from 'redux';
-import { composeWithDevTools } from 'redux-devtools-extension';
-import { persistReducer, persistStore } from 'redux-persist';
+import {applyMiddleware, createStore} from 'redux';
+import {composeWithDevTools} from 'redux-devtools-extension';
+import {persistReducer, persistStore} from 'redux-persist';
 import createSensitiveStorage from 'redux-persist-sensitive-storage';
 import ReduxThunk from 'redux-thunk';
 import reducers from './Reducers/index';
@@ -25,4 +25,4 @@ const store = createStore(
 
 let persistor = persistStore(store);
 
-export { store, persistor };
+export {store, persistor};
